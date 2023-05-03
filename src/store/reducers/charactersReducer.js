@@ -75,6 +75,10 @@ const charactersReducer = (state = initialState, action) => {
       return {
         ...state,
         charactersFilter: state.characters,
+        filters: {
+          gender: 'All',
+          eyeColor: 'All',
+        }
       };
 
     case CLEAR_CHARACTERS:
